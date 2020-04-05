@@ -1,6 +1,7 @@
 # Day 2 - Completed 4/2/2020
-# Happy Number
+# Happy Number - 202. Happy Number
 # https://leetcode.com/explore/featured/card/30-day-leetcoding-challenge/528/week-1/3284/
+# https://leetcode.com/problems/happy-number/
 
 # Write an algorithm to determine if a number is "happy".
 

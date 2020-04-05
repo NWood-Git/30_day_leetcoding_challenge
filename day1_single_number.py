@@ -1,6 +1,7 @@
 # Day 1 - Completed 4/1/2020
-# Single Number
+# Single Number - 136. Single Number
 # https://leetcode.com/explore/featured/card/30-day-leetcoding-challenge/528/week-1/3283/
+# https://leetcode.com/problems/single-number/
 
 # Given a non-empty array of integers, every element appears twice except for one.
 # Find that single one.
@@ -32,7 +33,7 @@ print(singleNumber([4,1,2,1,2]))
 # Memory Usage: 16.3 MB
 # Your runtime beats 85.38 % of python3 submissions
 
-
+#####
 
 def singleNumber1(nums):
     unique_nums = []
