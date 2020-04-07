@@ -1,4 +1,4 @@
-# Day 6 - Completed 4/7/2020
+# Day 7 - Completed 4/7/2020
 # Counting Elements
 # https://leetcode.com/explore/featured/card/30-day-leetcoding-challenge/528/week-1/3289/
 
@@ -28,11 +28,32 @@
 
 def countElements(arr):
     result = 0
+    arr_len_minus_1 = len(arr) - 1
+    arr = sorted(arr)
+    for i in range(arr_len_minus_1):
+        num = arr[i]
+        next_idx = i+1
+        while  next_idx < arr_len_minus_1  and arr[next_idx] == num:
+            next_idx += 1
+        if arr[next_idx] == num + 1:
+            result += 1
+    return result
+
+# Submission Detail
+# 35 / 35 test cases passed.
+# Status: Accepted
+# Runtime: 28 ms / 24 ms
+# Memory Usage: 13.9 MB / 13.8 MB
+# Sorry. We do not have enough accepted submissions to show distribution chart.
+
+'''
+def countElements(arr):
+    result = 0
     for i in arr:
         if i+1 in arr:
             result +=1
     return result
-
+'''
 # Submission Detail
 # 35 / 35 test cases passed.
 # Status: Accepted
